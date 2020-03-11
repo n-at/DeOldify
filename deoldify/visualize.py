@@ -371,12 +371,14 @@ def get_stable_video_colorizer(
 
 
 def get_image_colorizer(
-    render_factor: int = 35, artistic: bool = True
+    render_factor: int = 35,
+    artistic: bool = True,
+    results_dir: str = 'result_images'
 ) -> ModelImageVisualizer:
     if artistic:
-        return get_artistic_image_colorizer(render_factor=render_factor)
+        return get_artistic_image_colorizer(render_factor=render_factor, results_dir=results_dir)
     else:
-        return get_stable_image_colorizer(render_factor=render_factor)
+        return get_stable_image_colorizer(render_factor=render_factor, results_dir=results_dir)
 
 
 def get_stable_image_colorizer(
