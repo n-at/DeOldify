@@ -10,4 +10,6 @@ Run container:
         -e COLORIZE_SOURCE_IMAGE="/deoldify_source_images/image.jpg" \
         -e COLORIZE_TARGET_PATH="/deoldify_target_images" \
         -e COLORIZE_RENDER_FACTOR="35" \
-        -e COLORIZE_ARTISTIC="0"
+        -e COLORIZE_ARTISTIC="0" \
+        deoldify
+
